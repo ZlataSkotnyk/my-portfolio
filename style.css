@@ -85,3 +85,74 @@ footer {
     font-size: var(--font-size-micro);
     font-family: var(--font-family);
 }
+
+@media (max-width: 1024px) {
+    :root {
+        --font-size-large: 28px;
+        --font-size-small: 16px;
+        --font-size-micro: 12px;
+    }
+
+    .allContent {
+        margin-top: 80px;
+        padding: 22px;
+    }
+
+    .aboutMe {
+        gap: 20px;
+    }
+
+    .img img {
+        max-width: 300px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    :root {
+        --font-size-large: 22px;
+        --font-size-small: 14px;
+        --font-size-micro: 11px;
+    }
+
+    .allContent {
+        margin-top: 40px;
+        padding: 16px;
+    }
+
+
+    .aboutMe {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .bio {
+        margin-top: 10px;
+        text-align: center;
+        padding: 0 8px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    .img img {
+        max-width: 220px;
+    }
+
+    footer {
+        height: auto;
+        padding: 12px 0;
+    }
+
+    .footerText {
+        width: auto;
+        font-size: var(--font-size-micro);
+    }
+}
