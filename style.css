@@ -35,7 +35,6 @@ body {
     padding: 0.5rem 1rem;
 }
 
-/* Fixed navbar collapse styles */
 @media (max-width: 991px) {
     .navbar-collapse {
         position: absolute;

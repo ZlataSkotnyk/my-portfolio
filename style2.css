@@ -27,10 +27,48 @@ body {
 
 .navbar-brand {
     color: var(--brand-color) !important;
+    font-weight: bold;
 }
 
 .nav-link {
     color: var(--topics-color) !important;
+    padding: 0.5rem 1rem;
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--header-color);
+        padding: 1rem;
+        z-index: 1000;
+        border-radius: 0 0 8px 8px;
+    }
+}
+
+.navbar-toggler {
+    border-color: var(--brand-color);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        padding: 1rem;
+        margin-top: 0.5rem;
+    }
+    
+    .navbar-nav {
+        text-align: center;
+    }
+    
+    .nav-item {
+        margin: 0.5rem 0;
+    }
 }
 
 h1,
@@ -49,10 +87,11 @@ p {
     background-color: var(--main-color);
     border: 2px solid rgb(247, 203, 154);
     box-shadow: 0px 0px 50px rgb(236, 127, 64);
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     min-height: 200px;
     height: auto;
-    margin-top: 200px;
+    margin: 200px 15px 0;
 }
 
 .myProjects {
