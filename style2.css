@@ -66,6 +66,11 @@ body {
         text-align: center;
     }
 
+    
+    .navbar-nav {
+        text-align: center;
+    }
+    
     .nav-item {
         margin: 0.5rem 0;
     }
