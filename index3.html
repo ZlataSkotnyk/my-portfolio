@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style3.css">
+    <script defer src="script2.js"></script>
 </head>
 
 <body>
@@ -34,12 +35,21 @@
                 </div>
             </div>
         </nav>
+
+
         <div class="contactMe">
             <div class="contact">
-                <h1>Hi Everyone</h1>
-                <p>Here will be contact form</p>
+                <h1>Contact Me</h1>
+                <form>
+                    <input type="text" id="name" name="name" placeholder="Name" required><br><br>
+                    <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+                    <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea><br><br>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
             </div>
         </div>
+
+
         <footer>
             <div class="footerText">
                 Zlata Skotnyk <br>
