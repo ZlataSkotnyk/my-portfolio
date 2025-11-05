@@ -78,6 +78,10 @@ p {
     font-family: var(--font-family);
 }
 
+span{
+    color: var(--text-color) !important;
+}
+
 p {
     color: var(--text-color) !important;
     font-size: var(--font-size-small);
