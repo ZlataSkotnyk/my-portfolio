@@ -111,10 +111,12 @@ p {
     flex-direction: row;
     justify-content: center;
     gap: 30px;
+    
 }
 
 .projects {
     display: flex;
+    align-items: flex-start;
     flex-direction: row;
     justify-content: center;
     gap: 30px;

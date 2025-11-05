@@ -40,11 +40,21 @@
         <div class="contactMe">
             <div class="contact">
                 <h1>Contact Me</h1>
-                <form>
-                    <input type="text" id="name" name="name" placeholder="Name" required><br><br>
-                    <input type="email" id="email" name="email" placeholder="Email" required><br><br>
-                    <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea><br><br>
+                <form id="contactForm" onsubmit="return validateForm(event)">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                        <small class="error" id="nameError"></small>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                        <small class="error" id="emailError"></small>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
+                        <small class="error" id="messageError"></small>
+                    </div>
                     <button type="submit" class="submit-btn">Send Message</button>
+                    <p id="submitSuccess" class="success-message"></p>
                 </form>
             </div>
         </div>
