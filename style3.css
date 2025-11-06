@@ -213,10 +213,6 @@ footer {
         padding: 22px;
     }
 
-    .aboutMe {
-        gap: 20px;
-    }
-
     .img img {
         max-width: 300px;
     }
@@ -236,17 +232,8 @@ footer {
     }
 
 
-    .aboutMe {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
-
-    .bio {
-        margin-top: 10px;
-        text-align: center;
-        padding: 0 8px;
+    .contact {
+        width: 100%;
     }
 
     h1 {
