@@ -18,18 +18,18 @@ function validateForm(event) {
     messageError.textContent = '';
     submitSuccess.textContent = '';
     
-    nameInput.style.border = '2px solid transparent';
-    emailInput.style.border = '2px solid transparent';
-    messageInput.style.border = '2px solid transparent';
+    nameInput.style.borderBottom = '2px solid #fac2a1';
+    emailInput.style.borderBottom = '2px solid #fac2a1';
+    messageInput.style.borderBottom = '2px solid #fac2a1';
     
     const nameValue = nameInput.value.trim();
     if (nameValue.length < 2) {
         nameError.textContent = 'Name must be at least 2 characters long';
-        nameInput.style.border = '2px solid red';
+        nameInput.style.borderBottom = '2px solid rgb(245, 157, 157)';
         isValid = false;
     } else if (!/^[A-Za-z\s]+$/.test(nameValue)) {
         nameError.textContent = 'Name should contain only letters and spaces';
-        nameInput.style.border = '2px solid red';
+        nameInput.style.borderBottom = '2px solid rgb(245, 157, 157)';
         isValid = false;
     }
     
@@ -37,14 +37,14 @@ function validateForm(event) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(emailValue)) {
         emailError.textContent = 'Please enter a valid email address';
-        emailInput.style.border = '2px solid red';
+        emailInput.style.borderBottom = '2px solid rgb(245, 157, 157)';
         isValid = false;
     }
     
     const messageValue = messageInput.value.trim();
     if (messageValue.length < 10) {
         messageError.textContent = 'Message must be at least 10 characters long';
-        messageInput.style.border = '2px solid red';
+        messageInput.style.borderBottom = '2px solid rgb(245, 157, 157)';
         isValid = false;
     }
     

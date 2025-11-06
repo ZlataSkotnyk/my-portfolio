@@ -7,14 +7,14 @@ const projectDetails = {
     },
     2: {
         title: "Registration Form",
-        description: "A responsive registration form with client-side validation. Includes input validation, password strength checking, and form submission handling.",
-        technologies: "Technologies: HTML5, CSS3, JavaScript, Form Validation",
+        description: "A design of registration form includes full name, password and  email fields with registration button.",
+        technologies: "Technologies: HTML5, CSS3",
         link: "https://zlataskotnyk.github.io/lab-css-fundamentals/"
     },
     3: {
         title: "Tasty Bites",
-        description: "A modern restaurant website featuring a menu system, reservation form, and responsive design for all devices.",
-        technologies: "Technologies: HTML5, CSS3, Bootstrap 5",
+        description: "A modern website with a lot of recipes for breakfast, lunch, dinner, dessrts and vegetarian food, filter and sort navigation, favorite and about section",
+        technologies: "Technologies: HTML5, CSS3, JavaScript",
         link: "https://zlataskotnyk.github.io/Recipe-Website-Makeover-main/"
     }
 };
