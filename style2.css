@@ -5,8 +5,10 @@
     --topics-color: #fac2a1;
     --brand-color: #000000;
     --text-color: #fac2a1;
+    --project1--project2--project3-color: #023859;
     --copyright-color: #52768b;
-    --font-size-large: 30px;
+    --font-size-large: 40px;
+    --font-size-midiam: 24px;
     --font-size-small: 18px;
     --font-size-micro: 12px;
     --font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -66,18 +68,18 @@ body {
         text-align: center;
     }
 
-    
+
     .navbar-nav {
         text-align: center;
     }
-    
+
     .nav-item {
         margin: 0.5rem 0;
     }
 }
 
 h1,
-p {
+p{
     color: var(--text-color) !important;
     font-size: var(--font-size-large);
     font-family: var(--font-family);
@@ -86,6 +88,14 @@ p {
 p {
     color: var(--text-color) !important;
     font-size: var(--font-size-small);
+}
+
+h3{
+    color: var(--topics-color);
+    font-size: var(--font-size-midiam);
+    font-family: var(--font-family);
+    font-weight: bold;
+    margin-top: 15px;
 }
 
 .allContent {
@@ -127,8 +137,70 @@ p {
 .project3 {
     width: 100%;
     height: auto;
-    background-color: rgb(94, 37, 37);
+    background-color: var(--project1--project2--project3-color);
     text-align: center;
+    border: 2px solid rgb(100, 121, 238);
+    box-shadow: 0px 0px 20px rgb(46, 187, 243);
+    padding: 1rem;
+}
+
+.details-btn {
+    background-color:var(--text-color);
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 5px 10px;
+    border: 1px solid var(--text-color);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.details-btn:hover {
+    background-color: var(--project1--project2--project3-color);
+    color: var(--text-color);
+}
+
+.details-text {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: left;
+}
+
+.project-details h3 {
+    color: var(--topics-color);
+    font-size: var(--font-size-midiam);
+    margin-bottom: 1rem;
+    font-family: var(--font-family);
+    font-weight: bold;
+}
+
+.project-details p {
+    color: var(--text-color);
+    font-size: var(--font-size-small);
+    font-family: var(--font-family);
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
+}
+
+.project-details .project-link {
+    color: var(--topics-color);
+    font-size: 14px;
+    font-family: var(--font-family);
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 5px 10px;
+    border: 1px solid var(--topics-color);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.project-details .project-link:hover {
+    background-color: var(--topics-color);
+    color: var(--project1--project2--project3-color);
 }
 
 img {
