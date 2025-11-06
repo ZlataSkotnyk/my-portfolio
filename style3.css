@@ -61,11 +61,11 @@ body {
         padding: 1rem;
         margin-top: 0.5rem;
     }
-    
+
     .navbar-nav {
         text-align: center;
     }
-    
+
     .nav-item {
         margin: 0.5rem 0;
     }
@@ -94,13 +94,86 @@ p {
     margin: 200px 15px 0;
 }
 
+.welcome {
+    text-align: center;
+    margin-top: 50px;
+}
+
 .contactMe {
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 100px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 30px;
+}
+
+.contact {
+    text-align: center;
+    background-color: var(--footer-color);
+    width: 70%;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid rgb(100, 121, 238);
+    box-shadow: 0px 0px 20px rgb(46, 187, 243);
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--text-color);
+}
+
+input {
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--text-color);
+    background-color: var(--footer-color);
+    color: var(--text-color);
+}
+
+textarea {
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--text-color);
+    background-color: var(--footer-color);
+    color: var(--text-color);
+}
+
+
+.errorconteiner {
+    color: rgb(245, 157, 157);
+    font-weight: bold;
+}
+
+.success-message {
+    margin: 10px auto 10px auto;
+}
+
+.submit-btn {
+    margin: 10px auto 10px auto;
+    background-color: var(--text-color);
+    color: var(--footer-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--footer-color);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
 
 }
 
