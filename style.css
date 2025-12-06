@@ -1,13 +1,14 @@
 :root {
-    --main-color: #BF7F5A;
-    --header-color: #D99177;
-    --footer-color: #023859;
-    --skill-section-color: #023859;
-    --card-back-color: #BF7F5A;
-    --topics-color: #fac2a1;
+    --backgrounf-color: white;
+    --main-color: rgb(255, 241, 213);
+    --header-color: #ff946352;
+    --footer-color: #ffcf1f;
+    --skill-section-color: #d8d8d8;
+    --card-back-color: #ffcf1f;
+    --topics-color: #000000;
     --brand-color: #000000;
-    --text-color: #fac2a1;
-    --copyright-color: #52768b;
+    --text-color: #000000;
+    --copyright-color: #000000;
     --font-size-large: 30px;
     --font-size-small: 18px;
     --font-size-micro: 12px;
@@ -15,19 +16,44 @@
 }
 
 body {
-    background-image: url(img/pawel-czerwinski-tMbQpdguDVQ-unsplash.jpg);
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: var(--backgrounf-color);
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    color: var(--text-color);
+}
+/* DARK MODE STYLES */
+body.dark {
+    --backgrounf-color: rgb(48, 48, 48);
+    --main-color: #0b0c1a;
+    --header-color: #1f1f2b;
+    --footer-color: #1f1f2b;
+    --skill-section-color: #232335;
+    --card-back-color: #2b2b44;
+    --topics-color: #e6e6e6;
+    --brand-color: #e6e6e6;
+    --text-color: #e6e6e6;
+    --copyright-color: #bfbfbf;
 }
 
+body.dark .allContent{
+    border: 2px solid #ffffff;
+}
+
+body.dark #toggle-mode {
+    background-color: #555555;
+    color: #e6e6e6;
+}
+/* DARK MODE STYLES END*/
 .bg-body-tertiary {
     background-color: var(--header-color) !important;
     font-family: var(--font-family);
+    font-size: var(--font-size-small);
+    height: 80px;
 }
 
 .navbar-brand {
+    font-size: var(--font-size-small);
     color: var(--brand-color) !important;
     font-weight: bold;
 }
@@ -35,6 +61,13 @@ body {
 .nav-link {
     color: var(--topics-color) !important;
     padding: 0.5rem 1rem;
+    transition: transform 1s ease-out
+}
+
+.nav-link:hover {
+    color: white !important;
+    transform: scale(1.1);
+
 }
 
 @media (max-width: 991px) {
@@ -73,6 +106,23 @@ body {
     }
 }
 
+/*toggle button styles*/
+#toggle-mode {
+    background-color: #ffcf1f;
+    width: 200px;
+    height: 40px;
+    margin: 0 10px 0 10px;
+    border: none;
+    border-radius: 12px;
+    transition: transform 1s ease-out;
+}
+
+#toggle-mode:hover {
+    background-color: #ffd633;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+/*toggle button styles end*/
 h1,
 p {
     color: var(--text-color) !important;
@@ -91,13 +141,16 @@ p {
 
 .allContent {
     background-color: var(--main-color);
-    border: 2px solid rgb(247, 203, 154);
-    box-shadow: 0px 0px 50px rgb(236, 127, 64);
     max-width: 1200px;
     width: 100%;
+    margin: 50px auto;
+    padding: 30px;
     min-height: 200px;
     height: auto;
-    margin: 50px 0 50px 0;
+    border: 2px solid #ffcf1f;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
 }
 
 .aboutMe {
@@ -116,17 +169,22 @@ p {
 }
 
 .bio {
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
-.skillHeader{
-    text-align: center;
+.skillHeader {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 7px solid var(--card-back-color);
+    border-radius: 5px;
+    margin: 0 auto;
 }
 
 .skillsSection {
     background-color: var(--skill-section-color);
-    border: 2px solid rgb(100, 121, 238);
-    box-shadow: 0px 0px 20px rgb(46, 187, 243);
+    border: 2px solid rgb(186, 186, 186);
     border-radius: 10px;
     margin: 50px auto 50px auto;
     padding: 20px 0 20px 0;
@@ -147,7 +205,7 @@ p {
 }
 
 .flip-card-inner {
-    
+
     position: relative;
     width: 100%;
     height: 100%;
