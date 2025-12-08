@@ -443,3 +443,39 @@ footer {
         font-size: 10px;
     }
 }
+
+@media (min-width: 1600px) {
+    :root {
+        --font-size-large: 40px;
+        --font-size-midiam: 26px;
+        --font-size-small: 20px;
+    }
+
+    .allContent {
+        max-width: 1600px;
+        padding: 36px;
+        margin: 60px auto;
+    }
+
+    .welcome {
+        width: 12%;
+    }
+}
+
+@media (min-width: 1920px) {
+    :root {
+        --font-size-large: 48px;
+        --font-size-midiam: 28px;
+        --font-size-small: 22px;
+    }
+
+    .allContent {
+        max-width: 1800px;
+        padding: 48px;
+        margin: 90px auto;
+    }
+
+    .welcome {
+        width: 25%;
+    }
+}

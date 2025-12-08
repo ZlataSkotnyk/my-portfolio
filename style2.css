@@ -493,3 +493,55 @@ footer {
         font-size: 10px;
     }
 }
+
+@media (min-width: 1600px) {
+    :root {
+        --font-size-large: 40px;
+        --font-size-midiam: 26px;
+        --font-size-small: 20px;
+    }
+
+    .allContent {
+        max-width: 1600px;
+        padding: 36px;
+        margin: 60px auto;
+    }
+
+    .projects img {
+        height: 260px;
+    }
+
+    .project1, .project2, .project3 {
+        min-width: 320px;
+    }
+
+    .welcome {
+        width: 12%;
+    }
+}
+
+@media (min-width: 1920px) {
+    :root {
+        --font-size-large: 48px;
+        --font-size-midiam: 28px;
+        --font-size-small: 22px;
+    }
+
+    .allContent {
+        max-width: 1800px;
+        padding: 48px;
+        margin: 80px auto;
+    }
+
+    .projects img {
+        height: 300px;
+    }
+
+    .project1, .project2, .project3 {
+        min-width: 360px;
+    }
+
+    .welcome {
+        width: 15%;
+    }
+}
