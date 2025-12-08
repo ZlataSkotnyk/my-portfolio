@@ -263,7 +263,7 @@ footer {
     font-family: var(--font-family);
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1024px) {
     :root {
         --font-size-large: 28px;
         --font-size-small: 16px;
@@ -273,6 +273,10 @@ footer {
     .allContent {
         margin: 120px auto;
         padding: 22px;
+    }
+
+    .welcome {
+        width: 30%;
     }
 
     .contact {
@@ -372,7 +376,7 @@ footer {
     }
 
     .allContent {
-        margin: 80px auto 30px;
+        margin: 150px auto 150px;
         padding: 12px;
     }
 

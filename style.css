@@ -287,6 +287,11 @@ footer {
         width: 220px;
         height: 220px;
     }
+
+    .flip-card-front img {
+        width: 200px;
+        height: auto;
+    }
 }
 
 @media (max-width: 768px) {
@@ -343,7 +348,7 @@ footer {
     }
 
     .skillHeader {
-        width: 80%;
+        width: 25%;
         margin: 20px auto;
     }
 
@@ -357,6 +362,11 @@ footer {
     .flip-card {
         width: 180px;
         height: 180px;
+    }
+
+    .flip-card-front img {
+        width: 150px;
+        height: auto;
     }
 
     footer {
@@ -396,7 +406,7 @@ footer {
     }
 
     .allContent {
-        margin: 80px auto 30px;
+        margin: 100px auto 100px;
         padding: 12px;
         border-radius: 6px;
         border: 1px solid rgba(255, 207, 31, 0.3);
@@ -429,7 +439,7 @@ footer {
     }
 
     .skillHeader {
-        width: 90%;
+        width: 25%;
         margin: 15px auto;
         font-size: 1.2rem;
         border-bottom: 4px solid var(--card-back-color);
