@@ -161,7 +161,7 @@ p {
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-    border-bottom: 7px solid var(--header-color);
+    border-bottom: 7px solid var(--footer-color);
     border-radius: 5px;
     margin: 0 auto;
 }
@@ -263,7 +263,7 @@ footer {
     font-family: var(--font-family);
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1600px) {
     :root {
         --font-size-large: 28px;
         --font-size-small: 16px;
@@ -271,7 +271,7 @@ footer {
     }
 
     .allContent {
-        margin: 60px auto 40px;
+        margin: 120px auto;
         padding: 22px;
     }
 
