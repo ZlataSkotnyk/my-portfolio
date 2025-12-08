@@ -1,10 +1,17 @@
 :root {
     --backgrounf-color: white;
     --main-color: rgb(255, 241, 213);
-    --header-color: #ff946352;
+    --header-color: #bbbbbb;
     --footer-color: #ffcf1f;
+    --toggle-mode-color: #ffcf1f;
+    --toggle-mode-color-hover: #ffd633;
     --topics-color: #000000;
     --brand-color: #000000;
+    --submit-btn: #dadada;
+    --submit-btn-text: #010101;
+    --submit-btn-hover: orange;  
+    --submit-btn-hover-text: white;
+
     --text-color: #000000;
     --copyright-color: #000000;
     --font-size-large: 30px;
@@ -27,22 +34,23 @@ body.dark {
     --main-color: #0b0c1a;
     --header-color: #1f1f2b;
     --footer-color: #1f1f2b;
-    --skill-section-color: #232335;
-    --card-back-color: #2b2b44;
+    --toggle-mode-color: #0b0c1a;
+    --toggle-mode-text-color: #ffffff;
+    --toggle-mode-color-hover: #060930;
     --topics-color: #e6e6e6;
     --brand-color: #e6e6e6;
+    --submit-btn: #dadada;
+    --submit-btn-text: #010101;
+    --submit-btn-hover: #060930;  
+    --submit-btn-hover-text: white;
     --text-color: #e6e6e6;
     --copyright-color: #bfbfbf;
 }
 
 body.dark .allContent{
-    border: 2px solid #ffffff;
+    border: none;
 }
 
-body.dark #toggle-mode {
-    background-color: #555555;
-    color: #e6e6e6;
-}
 /* DARK MODE STYLES END*/
 
 .bg-body-tertiary {
@@ -105,7 +113,8 @@ body.dark #toggle-mode {
 }
 /*toggle button styles*/
 #toggle-mode {
-    background-color: #ffcf1f;
+    background-color: var(--toggle-mode-color);
+    color: var(--toggle-mode-text-color);
     width: 200px;
     height: 40px;
     margin: 0 10px 0 10px;
@@ -115,14 +124,13 @@ body.dark #toggle-mode {
 }
 
 #toggle-mode:hover {
-    background-color: #ffd633;
+    background-color: var(--toggle-mode-color-hover);
     cursor: pointer;
     transform: scale(1.1);
 }
 /*toggle button styles end*/
 
-h1,
-p {
+h1 {
     color: var(--text-color) !important;
     font-size: var(--font-size-large);
     font-family: var(--font-family);
@@ -137,7 +145,7 @@ p {
     background-color: var(--main-color);
     max-width: 1200px;
     width: 100%;
-    margin: 50px auto;
+    margin: 40px auto;
     padding: 30px;
     min-height: 200px;
     height: auto;
@@ -148,8 +156,14 @@ p {
 }
 
 .welcome {
-    text-align: center;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 50px;
+    border-bottom: 7px solid var(--header-color);
+    border-radius: 5px;
+    margin: 0 auto;
 }
 
 .contactMe {
@@ -167,9 +181,7 @@ p {
     width: 70%;
     height: auto;
     padding: 20px;
-    border-radius: 10px;
-    border: 2px solid rgb(100, 121, 238);
-    box-shadow: 0px 0px 20px rgb(46, 187, 243);
+    border-radius: 12px;
 }
 
 .form-group {
@@ -219,26 +231,24 @@ textarea {
 
 .submit-btn {
     margin: 10px auto 10px auto;
-    background-color: var(--text-color);
+    background-color: var(--submit-btn);
     font-family: var(--font-family);
-    color: var(--footer-color);
+    color: var(--submit-btn-text);
     border: none;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 12px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 1s ease;
 }
 
 .submit-btn:hover {
-    background-color: var(--footer-color);
-    color: var(--text-color);
-    border: 1px solid var(--text-color);
-
+    background-color: var(--submit-btn-hover);
+    color: var(--submit-btn-hover-text);
 }
 
 footer {
     background-color: var(--footer-color);
-    height: 80px;
+    height: 87px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -261,31 +271,51 @@ footer {
     }
 
     .allContent {
-        margin-top: 80px;
+        margin: 60px auto 40px;
         padding: 22px;
     }
 
-    .img img {
-        max-width: 300px;
+    .contact {
+        width: 80%;
     }
 }
 
-
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     :root {
-        --font-size-large: 22px;
-        --font-size-small: 14px;
-        --font-size-micro: 11px;
+        --font-size-large: 24px;
+        --font-size-small: 15px;
+        --font-size-micro: 12px;
+    }
+
+    .navbar-brand {
+        font-size: 16px;
     }
 
     .allContent {
-        margin-top: 40px;
+        margin: 100px auto 40px;
         padding: 16px;
     }
 
+    #toggle-mode {
+        width: 120px;
+        height: 35px;
+        margin: 0 5px;
+        font-size: 12px;
+    }
+
+    .welcome {
+        width: 85%;
+        margin: 30px auto 20px;
+    }
+
+    .contactMe {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 
     .contact {
         width: 100%;
+        padding: 15px;
     }
 
     h1 {
@@ -294,19 +324,122 @@ footer {
 
     p {
         font-size: 0.95rem;
+        line-height: 1.5;
     }
 
-    .img img {
-        max-width: 220px;
+    input, textarea {
+        height: 45px;
+        font-size: 14px;
+    }
+
+    textarea {
+        height: 80px;
+    }
+
+    footer {
+        height: auto;
+        padding: 15px 0;
+        margin-top: 30px;
+    }
+
+    .footerText {
+        width: auto;
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --font-size-large: 20px;
+        --font-size-small: 14px;
+        --font-size-micro: 11px;
+    }
+
+    .bg-body-tertiary {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .navbar-brand {
+        font-size: 14px;
+    }
+
+    #toggle-mode {
+        width: 100px;
+        height: 32px;
+        margin: 5px 2px;
+        font-size: 11px;
+    }
+
+    .allContent {
+        margin: 80px auto 30px;
+        padding: 12px;
+    }
+
+    .welcome {
+        width: 90%;
+        margin: 15px auto;
+        font-size: 1.1rem;
+    }
+
+    .contactMe {
+        margin: 20px 0;
+    }
+
+    .contact {
+        width: 100%;
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+        margin: 10px 0;
+    }
+
+    p {
+        font-size: 13px;
+        line-height: 1.4;
+        margin: 8px 0;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    input, textarea {
+        height: 40px;
+        font-size: 13px;
+        padding: 8px 4px;
+        border-radius: 6px;
+    }
+
+    textarea {
+        height: 70px;
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: 10px 15px;
+        font-size: 13px;
+        margin: 10px 0;
+    }
+
+    .errorconteiner {
+        font-size: 12px;
+    }
+
+    .success-message {
+        font-size: 13px;
     }
 
     footer {
         height: auto;
         padding: 12px 0;
+        margin-top: 20px;
     }
 
     .footerText {
-        width: auto;
-        font-size: var(--font-size-micro);
+        width: 90%;
+        font-size: 10px;
     }
 }
